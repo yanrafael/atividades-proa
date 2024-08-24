@@ -1,0 +1,95 @@
+#camada1{
+    position: relative;
+    width: 1300px;
+    height: 100px;
+    background-color: rgb(117, 139, 19);
+    text-align: center;
+}
+
+#camada2{
+    position: absolute;
+    top: 120px;
+    width: 350px;
+    height: 500px;
+    background-color: rgb(100, 182, 207);
+    font-family: Tahoma;
+}
+
+#camada3{
+    position: absolute;
+    left: 20px;
+    top: 140px;
+    width: 325px;
+    height: 220px;
+    background-color: white;
+    font-family: Tahoma;
+}
+
+#camada4{
+    position: absolute;
+    left: 20px;
+    top: 375px;
+    width: 325px;
+    height: 220px;
+    background-color: white;
+    font-family: Tahoma;
+}
+
+#camada5{
+    position: absolute;
+    top: 120px;
+    left: 358px;
+    width: 950px;
+    height: 500px;
+    background-color: rgb(113, 32, 145);
+    font-family: Tahoma;
+}
+
+#camada6{
+    position: absolute;
+    top: 152px;
+    left: 370px;
+    width: 926px;
+    height: 468px;
+    background-color: wheat;
+    font-family: Tahoma;
+}
+#camada7{
+    position: absolute;
+    top: 170px;
+    left: 370px;
+    width: 926px;
+    height: 40px;
+    background-color: rgb(76, 86, 76 );
+    text-align: center;
+}
+
+#camada8{
+    position: absolute;
+    top: 225px;
+    left: 370px;
+    width: 926px;
+    height: 150px;
+    background-color: rgb(185, 86, 61);
+    font-family: Tahoma;
+}
+
+#camada9{
+    position: absolute;
+    top: 385px;
+    left: 370px;
+    width: 926px;
+    height: 225px;
+    background-color: hsl(284, 6%, 51%);
+    font-family: Tahoma;
+}
+
+#camada10{
+    position: absolute;
+    top: 620px;
+    width: 1300px;
+    height: 100px;
+    background-color: rgb(34, 24, 17);
+    color: white;
+    font-family: Tahoma;
+}

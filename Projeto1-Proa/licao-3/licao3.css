@@ -7,7 +7,9 @@
 
 
 main{
-    background-color: rgb(206, 109, 157);
+    background: url(imagens/guitarra_fundo_body.jpg);
+    background-position: center;
+    background-size: cover;
     position: relative;
     width: 100%;
     height: 700px;
@@ -22,8 +24,25 @@ main{
     background-repeat: no-repeat;
 }
 
-#header{
-    width: 100%;
+header{
+    background: url(imagens/guitarras_header.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+nav{
+    padding-right: 60px;
+    padding-bottom: 20px;
+}
+
+nav a{
+    padding: 10px;
+    color: white;
+    background-color: silver;
+    text-decoration: none;
 }
 
 .vermelho{
@@ -35,16 +54,15 @@ main{
     margin-bottom: 10px;
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
 .rosa{
     background-color: silver;
     position: relative;
     width: 45%;
-    height: 600px;
-    margin-top: 20px;
+    height: 70%;
     padding: 2px;
-    margin-left: 3%;
 }
 
 #img_2{
@@ -60,33 +78,43 @@ main{
     text-align: center;
     margin-top: 8%;
     color: white;
+    padding-top: 55px;
 }
 
 .azulclaro{
     background-color: white;
     position: relative;
-    height: 300px;
+    height: 350px;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .anuncioviolao{
-    position: relative;
-    margin-top: 22px;
     width: 20%;
     height: 100px;
-    background-color: white;
     text-align: center;
-    height: 150%;
+    height: 250px;
+    margin: 28px;
+}
+
+.rosa2{
+    background: url(imagens/loja.jpg) no-repeat;
+    width: 45%;
+    height: 70%;
+    background-size: cover;
+
 }
 
 .anuncioviolao>p {
-    font-size: 25px;
+    width: 100%;
+    font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .anuncioviolao>img {
-    width: 80%;
+    width: 200px;
+    height: 150px;
 }
 
 .preco {
@@ -97,11 +125,18 @@ main{
 
 .branco{
     background-color: white;
-    position: relative;
-    height: 700px;
+    height: 500px;
+    width: 100%;
     margin-bottom: 10px;
     padding: 2px;
     display: flex;
+}
+
+.branco aside{
+    width: 500px;
+    height: 250px;
+    text-align: center;
+    margin: 50px;
 }
 
 .amarelo{
@@ -117,11 +152,9 @@ main{
     padding-left: 4%;
     padding-right: 4%;
 }
-
-.azul_escuro_caixa{
-    background-color: navy;
-    height: 550px;
-    width: 45%;
+iframe{
+    height: 300px;
+    width: 200%;
 }
 
 .verde_caixa{
@@ -133,6 +166,7 @@ main{
     color: white;
     width: 45%;
     height: 550px;
+    padding-top: 120px;
 }
 
 .caixa{
@@ -145,52 +179,161 @@ main{
     padding: 2px;
 }
 
-.preto{
-    background-color: black;
-    height: 150px;
-    color: white;
-    padding: 2px;
-}
-
 #caixa_icone{
     display: flex;
-    height: 20%;
-    margin-left: 66%;
-    margin-top: 9%;
-    border: solid red;
+    flex-direction: column;
+    justify-content: center;
 }
 
-#caixa_icone img{
-    margin-left: 30px;
-}
-
-h3{
-    position: absolute;
-    margin-left: 65%;
+.h3{
     margin-top: 5%;
-    font-size: 30px;
+    font-size: 20px;
     font-family: Tahoma;
     color: darkblue;
 }
 
-.form{
-    border: solid red;
-    margin-left: 1%;
-    margin-top: 2%;
-    width: 50%;
-    height: 100%;
+.icones{
+    display: flex;
+    justify-content: center;
+}
+
+.icones img{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+
+form{
+    margin: 20px;
+    padding: 5px;
+    background-color: #f9f9f9;
+    border: 2px solid #dedede;
+}
+
+label{
+    font-weight: bold;
+}
+
+input, textarea{
+    width: 95%;
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"]{
+    background-color:silver;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: dimgrey;
+}
+
+footer{
+    background-color: black;
+    color:white;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+footer p{
+    font-size: 15px;
+}
+
+h5{
+    padding-top: 20px;
+}
+
+#final{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#final img{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
 }
 
 
 /* visualização mobile*/
-
-@media only screen and (max-width:480px){
-    
-    .rosa{
-        width: 100%;
+@media screen and (max-width:480px){
+    .vermelho{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        height: 300px;
+    }
+
+    .rosa{
+        width: auto;
+        height: auto;
+        margin: 10px;
+        padding-bottom: 10px;
+        margin-top: 40px;
+    }
+
+    .rosa2{
+        width: 95%;
+        margin-top: 20px;
+    }
+
+    .azulclaro{
+        display: flex;
+        flex-wrap: wrap;/* quebra para baixo quando a tela diminui*/
+        font-size: 0.9em;
+        width: auto;
+        height: auto;
+    }
+
+    .anuncioviolao img{
+        width: 110px;
+        height: auto;
+    }
+
+    .anuncioviolao{
+        margin: 30px;
+    }
+
+    .amarelo{
+        gap: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    iframe{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .verde_caixa{
+        width: auto;
+        margin-bottom: 10px;
+        padding-top: 80px;
+    }
+
+    .verde_caixa p{
+        font-size: 20px;
+    }
+
+    .branco{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .branco aside{
+        width: auto;
+        margin: 100px 0;
+    }
+    
+    #sobre_violao{
+        font-size: 20px;
     }
 }

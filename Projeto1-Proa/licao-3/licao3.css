@@ -336,4 +336,8 @@ h5{
     #sobre_violao{
         font-size: 20px;
     }
+
+    nav a{
+        font-size: 13px;
+    }
 }

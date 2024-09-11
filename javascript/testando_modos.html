@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Testando modos </title>
+    <link rel="stylesheet" href="testando_modos.css">
+</head>
+<body class="fundo">
+
+    <h1> Testando modo escuro, modo daltônico e baixa visão </h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error illum natus obcaecati quibusdam, eligendi inventore! Repudiandae cumque recusandae natus laborum temporibus ex! Cum placeat praesentium tempore ipsam, commodi nulla eaque.</p>
+
+    <input type="button" id="preto" value="modo escuro" onclick="preto()" />
+    <input type="button" id="roxo" value="modo daltônico" onclick="roxo()" />
+    <input type="button" id="branco" value="modo baixa visão" onclick="branco()" />
+    <input type="button" id="cor_padrao" value="modo padrão" onclick="cor_padrao()" />
+
+    <hr>
+
+    <img src="imagens/edgar-brawl-stars.png" alt="personagem edgar de brawl stars" class="myimage">
+
+    <script>
+
+        function preto(){
+            document.querySelector(".fundo").style.backgroundColor="black";
+            document.querySelector(".fundo").style.color="white";
+            document.querySelector(".myimage").src="imagens/corvo-brawl-stars.png";
+        }
+
+        function roxo(){
+            document.querySelector(".fundo").style.backgroundColor="blue";
+            document.querySelector(".fundo").style.color="orange";
+            document.querySelector(".myimage").src="imagens/gale-brawl-stars.png"
+        }
+
+        function branco(){
+            document.querySelector(".fundo").style.backgroundColor="white";
+            document.querySelector(".fundo").style.color="black"
+            document.querySelector(".myimage").src="imagens/wattson-brawl-stars.png";
+            document.querySelector(".fundo").style.fontSize="30px";
+        }
+
+        function cor_padrao(){
+            document.querySelector(".fundo").style.backgroundColor="white";
+            document.querySelector(".fundo").style.color="black";
+            document.querySelector(".myimage").src="imagens/edgar-brawl-stars.png";
+        }
+
+    </script>
+
+
+    
+</body>
+</html>

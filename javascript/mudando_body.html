@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Teste troca de conteúdo no javascript </title>
+    <link rel="stylesheet" href="mudando_body.css">
+
+</head>
+<body class="fundo">
+    
+    <h1 id="titulo"> Testando mudança de cor de fundo, a cor da imagem da página </h1>
+
+    <input type="button" id="verde" value="cor verde" onclick="verde()" />
+    <input type="button" id="azul" value="cor azul" onclick="azul()" />
+    <input type="button" id="bege" value="cor bege" onclick="bege()" />
+    
+    <hr />
+
+    <img src="imagens/squeak-brawl-stars.png" class="myimage" />
+
+    <script>
+
+        let header = document.getElementById("titulo");
+
+        function verde(){
+            //querySelector: comando para uma ação
+            document.querySelector(".fundo").style.backgroundColor="green";
+            document.querySelector(".fundo").style.color="white";
+            document.querySelector(".myimage").src="imagens/griff-brawl-stars.png";
+            header.innerHTML="Testando o modo verde";
+        }
+            function azul(){
+            //querySelector: comando para uma ação
+            document.querySelector(".fundo").style.backgroundColor="blue";
+            document.querySelector(".fundo").style.color="yellow";
+            document.querySelector(".myimage").src="imagens/el-primo-brawl-stars.png";
+            header.innerHTML="Testando o modo azul";
+        }
+
+        function bege(){
+            //querySelector: comando para uma ação
+            document.querySelector(".fundo").style.backgroundColor="bisque";
+            document.querySelector(".fundo").style.color="rgb(69, 4, 4)";
+            document.querySelector(".myimage").src="imagens/squeak-brawl-stars.png";
+            header.innerHTML="Testando o modo bege";
+        }
+
+    </script>
+
+</body>
+</html>

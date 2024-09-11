@@ -1,0 +1,194 @@
+div{
+    width: 300px;
+    height: 250px;
+    float: left;
+    border: solid 1px #333;
+}
+
+img{
+    width: 60%;
+    padding: 10%;
+    border: solid 1px #333;
+}
+
+#foto img{
+    transform: rotate(0deg);
+    transition: 2s all;
+}
+
+#foto img:hover{
+    transform: rotate(50deg); /*dag: graus*/
+    transition: 2s all;
+}
+
+#foto1 img{
+    transform: rotateX(50deg); /*rotateX: gira na horizontal*/
+    transition: 2s all;/*all: tipos de transição, animação*/
+}
+
+#foto1 img:hover{
+    transform: rotateX(0deg); /*dag: graus*/
+    transition: 2s all;
+}
+
+#foto2 img{
+    transition-duration: 1s;/*all: tipos de transição, animação*/
+}
+
+#foto2 img:hover{
+    transform: rotateY(180deg); /* rotateY: gira na vertical*/
+    transition: 2s all;
+}
+
+#foto3 img{
+    transition-duration: 1s;
+}
+
+#foto3 img:hover{
+    transform: translate(100px, 50px); /**/
+    transition: 2s all;
+}
+
+#foto4 img{
+    transition-duration: 1s;
+}
+
+#foto4 img:hover{
+    transform: translateX(200px); /**/
+    transition: 2s all;
+}
+
+#foto5 img{
+    transition-duration: 0.5s;
+}
+
+#foto5 img:hover{
+    transform: translate(100px, 50px) rotate(180deg); /**/
+    transition: 2s all;
+}
+
+#foto6 img{
+    transition-duration: 0.5s;
+}
+
+#foto6 img:hover{
+    transform: scale(0.5); /**/
+    transition: 2s all;
+}
+
+
+#foto7 img{
+    transition-duration: 0.5s;
+}
+
+#foto7 img:hover{
+    transform: scale(1.5); /**/
+    transition: 2s all;
+}
+
+#foto8 img{
+    transition-duration: 0.5s;
+}
+
+#foto8 img:hover{
+    transition: all 1s ease-out;
+    -webkit-transform: scale(1.8) translate(20px, 50px) rotate(360deg);
+}
+
+.muda-fundo{
+    background-image: url(imagens/squeak-brawl-stars.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    transition: 0s all;
+}
+
+.muda-fundo:hover{
+    background-image: url(imagens/griff-brawl-stars.png);
+    transition: 0s all;
+}
+
+.efeito-texto{
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 50px;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke-color: red;
+    -webkit-text-stroke-width: 2px;
+    clear: left;
+}
+
+#box{
+    width: 300px;
+    height: 200px;
+    background-color: #df9;
+    box-shadow: 10px 10px 10px #090;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.sombra-texto{
+    clear: left;
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 50px;
+    text-shadow: 5px 10px 5px #099;
+}
+
+.colunas{
+    font-family: verdana;
+    font-size: 15px;
+    font-weight: bold;
+    -webkit-column-count: 3; /* n de colunas:*/
+    -webkit-column-rule: 1px solid #666;/* separador de colunas:*/
+    -webkit-column-gap: 1em; /* separador de colunas:*/
+    text-align: justify;
+}
+
+#box2{
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+    width: 600px;
+    height: 500px;
+    border: 10px solid;
+    background-image: url(imagens/squeak-brawl-stars.png);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#transparente{
+    width: 400px;
+    height: 300px;
+    background-color: rgba(42, 125, 188, 0.3);
+    border-radius: 10px;
+}
+
+@-webkit-keyframes pulse{
+    from{
+        opacity:0.0;
+        font-size: 100%;
+    }
+    to{
+        opacity: 1.0;
+        font-size: 200%;
+    }
+}
+
+#animacao{
+    -webkit-animation-name: pulse;/*nome da animaçao*/
+    -webkit-animation-duration: 2s;/*tempo de duraçao*/
+    -webkit-animation-iteration-count: infinite;/*quantas vezes será executada*/
+    -webkit-animation-timing-function: ease-in-out;/*forma de execuçao*/
+    -webkit-animation-direction: alternate;/**/
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 12px;
+    color: #f00;
+    text-align: center;
+    clear: left;
+    border: 0;
+    width: 650px;
+}

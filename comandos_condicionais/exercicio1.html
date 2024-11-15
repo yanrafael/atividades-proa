@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 1</title>
+</head>
+<body>
+    <script>
+
+        let vegetariano = 180
+        let peixe = 230
+        let frango = 250
+        let carne = 350
+
+        let abacaxi = 75
+        let sorvete_diet = 110
+        let mouse_diet = 170
+        let mouse_choco = 200
+
+        let cha = 20
+        let suco_laranja = 70
+        let suco_melao = 100
+        let refri = 65
+
+        let total_calorias = 0
+
+        let prato = parseInt(prompt("escolha o prato: 1- vegetariano 2- peixe 3- frango 4- carne"))
+        let sobremesa = parseInt(prompt("escolha a sobremesa: 1- abacaxi 2- sorvete diet 3- mouse diet 4- mouse chocolate"))
+        let bebida = parseInt(prompt("escolha a bebida: 1- cha 2- suco de laranja 3- suco de melao 4- refrigerante"))
+
+        if(prato == 1){
+            total_calorias += vegetariano
+        }else if(prato =frango= 2){
+            total_calorias += peixe
+        }else if(prato == 3){
+            total_calorias += frango
+        }else if(prato == 4){
+            total_calorias += carne
+        }else{
+            window.alert("numero inexistente")
+        }
+
+        if(sobremesa == 1){
+            total_calorias += abacaxi
+        }else if(sobremesa == 2){
+            total_calorias += sorvete_diet
+        }else if(sobremesa == 3){
+            total_calorias += mouse_diet
+        }else if(sobremesa == 4){
+            total_calorias += mouse_choco
+        }else{
+            window.alert("numero inexistente")
+        }
+
+        if(bebida == 1){
+            total_calorias += cha
+        }else if(bebida == 2){
+            total_calorias += suco_laranja
+        }else if(bebida == 3){
+            total_calorias += suco_melao
+        }else if(bebida == 4){
+            total_calorias += refri
+        }else{
+            window.alert("numero inexistente")
+        }
+
+        window.alert("o total calórico da refeição é: " + total_calorias)
+
+    </script>
+</body>
+</html>

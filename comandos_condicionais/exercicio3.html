@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 3</title>
+</head>
+<body>
+    <script>
+
+        let saldomes1 = parseFloat(prompt("digite o valor do saldo do mes 1"))
+        let saldomes2 = parseFloat(prompt("digite o valor do saldo do mes 2"))
+        let saldomes3 = parseFloat(prompt("digite o valor do saldo do mes 3"))
+        let saldomes4 = parseFloat(prompt("digite o valor do saldo do mes 4"))
+        let saldomes5 = parseFloat(prompt("digite o valor do saldo do mes 5"))
+        let saldomes6 = parseFloat(prompt("digite o valor do saldo do mes 6"))
+        let saldomes7 = parseFloat(prompt("digite o valor do saldo do mes 7"))
+        let saldomes8 = parseFloat(prompt("digite o valor do saldo do mes 8"))
+        let saldomes9 = parseFloat(prompt("digite o valor do saldo do mes 9"))
+        let saldomes10 = parseFloat(prompt("digite o valor do saldo do mes 10"))
+        let saldomes11 = parseFloat(prompt("digite o valor do saldo do mes 11"))
+        let saldomes12 = parseFloat(prompt("digite o valor do saldo do mes 12"))
+
+        let saldomedio = (saldomes1 + saldomes2 + saldomes3 + saldomes4 + saldomes4 + saldomes5 + saldomes6 + saldomes7 + saldomes8 + saldomes9 + saldomes10 + saldomes11 + saldomes12) / 12
+
+        if(saldomedio >= 0 && saldomedio <= 500){
+            window.alert("enviável fornecer crédido")
+        }else if(saldomedio >= 501 && saldomedio <= 1000){
+            window.alert("30% de credito medio disponível")
+        }else if(saldomedio >= 1001 && saldomedio <= 3000){
+            window.alert("40% de credito medio disponivel")
+        }else{
+            window.alert("50% de credito medio disponivel")
+        }
+
+    </script>
+</body>
+</html>

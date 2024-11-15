@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 8</title>
+</head>
+<body>
+    <script>
+
+            let porcentagemIPI = parseFloat(prompt("Dígite a porcentagem do IPI"))
+
+            let codigopeca1 = parseInt(prompt("Código peça 1"))
+            let valorUnitarioPeca1 = parseInt(prompt("Valor Unitário da peça 1"))
+            let quantidadePecas1 = parseInt(prompt("Quantidade peças 1"))
+
+            let codigopeca2 = parseInt(prompt("Código peça 2"))
+            let valorUnitarioPeca2 = parseFloat(prompt("Valor Unitário da peça 2"))
+            let quantidadePecas2 = parseInt(prompt("Quantidade peças 2"))
+
+            valorASerPago = (valorUnitarioPeca1 * quantidadePecas1 + valorUnitarioPeca2 * quantidadePecas2) * (porcentagemIPI/100 + 1)
+
+    </script>
+</body>
+</html>

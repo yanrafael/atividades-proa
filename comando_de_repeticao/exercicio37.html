@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercico 37</title>
+</head>
+<body>
+    <script>
+
+        let numero = parseInt(prompt("digite um numero"))
+
+        let primo = true
+
+        for(let a = 2; a < numero; a++){
+
+            if(numero % a == 0){
+                primo = false
+                break
+            }
+        }
+
+        document.write(primo ? "É primo" : "Não é primo")
+
+    </script>
+</body>
+</html>
